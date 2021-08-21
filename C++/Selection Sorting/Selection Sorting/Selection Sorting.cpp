@@ -3,28 +3,19 @@
 #include <fstream>
 #include <chrono>
 
-int output[1];
-int j;
-int sortingArray[10000];
-
-void sort()
+void sort(int sortingArray[], int n, int tempArray)
 {
-    int h = 1;
-    int tempArray[1];
-
-    for (int i = 0; i < j; i++)
+    for (int i = 0; i < n; i++)
     {
-        for (int ii = 0; ii < j; ii++)
+        for (int ii = i + 1; ii < n ; ii++)
         {
-            if (sortingArray[i] < sortingArray[ii])
+            if (sortingArray[ii] < sortingArray[i])
             {
-                tempArray[0] = sortingArray[i];
+                tempArray = sortingArray[i];
                 sortingArray[i] = sortingArray[ii];
-                sortingArray[ii] = tempArray[0];
+                sortingArray[ii] = tempArray;
             }
         }
-        h++;
-        output[0] = h;
     }
 }
 
@@ -34,29 +25,33 @@ int main()
     using std::chrono::duration_cast;
     using std::chrono::duration;
     using std::chrono::milliseconds;
+    
+    int n{};
+    int tempArray{};
+    int sortingArray[10000];
 
     std::ifstream file("Arrayfile.txt");
 
     if (file.is_open())
     {
+        
         int x = 0;
         int showoutput;
         while (true)                //Gets file size and returns to to x
         {
             file >> x;
-            j++;
+            n++;
             if (file.eof()) break;
         }
 
         file.seekg(0);              //Retruns to top of file
-        for (x = 0; x < j; ++x)
+        for (x = 0; x < n; ++x)
         {
             file >> sortingArray[x];
         }
         file.close();
-
         auto t1 = high_resolution_clock::now();
-        sort();
+        sort(sortingArray, n, tempArray);
         auto t2 = high_resolution_clock::now();
 
         //Getting number of milliseconds as an integer
@@ -66,7 +61,7 @@ int main()
 
         std::cout << "Selection Sorting\n";
         std::cout << "\n";
-        std::cout << "Array has been sorted in " << output[0] << " passes in " << ms_double.count() << "ms\n";
+        std::cout << "Array has been sorted in " << ms_double.count() << "ms\n";
         //std::cout << ms_double.count() << "ms";
         std::cout << "\n";
         std::cout << "Would you like to show output\n";
@@ -76,7 +71,7 @@ int main()
         if (showoutput == 1)
         {
             //Output sorted Array
-            for (int k = 0; k < j; k++)
+            for (int k = 0; k < n; k++)
             {
                 std::cout << sortingArray[k] << "\n";
             }
