@@ -2,9 +2,11 @@
 #include <string>
 #include <fstream>
 #include <chrono>
+#include <assert.h>
 
-int sortingArray[5000];
 int output[2];
+int j;
+int sortingArray[255999996];
 
 void sort()
 {
@@ -16,7 +18,7 @@ void sort()
 
     for (int i = 0; i < h; i++)
     {
-        for (int ii = 0; ii < 4999; ii++)
+        for (int ii = 0; ii < j-1; ii++)
         {
             if (sortingArray[ii] > sortingArray[ii + 1])
             {
@@ -37,20 +39,31 @@ void sort()
 
 int main()
 {
+    using std::chrono::high_resolution_clock;
+    using std::chrono::duration_cast;
+    using std::chrono::duration;
+    using std::chrono::milliseconds;
+
     std::ifstream file("Arrayfile.txt");
+
     if (file.is_open())
     {
-        for (int p = 0; p < 5000; ++p)
+        int x = 0;
+        int showoutput;
+        while (true)                //Gets file size and returns to to x
         {
-            file >> sortingArray[p];
+            file >> x;
+            j++;
+            if (file.eof()) break;
         }
         
-        int showoutput;
-        using std::chrono::high_resolution_clock;
-        using std::chrono::duration_cast;
-        using std::chrono::duration;
-        using std::chrono::milliseconds;
-
+        file.seekg(0);              //Retruns to top of file
+        for (x = 0; x < j; ++x)
+        {
+            file >> sortingArray[x];
+        }
+        file.close();
+       
         auto t1 = high_resolution_clock::now();
         sort();
         auto t2 = high_resolution_clock::now();
