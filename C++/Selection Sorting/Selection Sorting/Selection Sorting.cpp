@@ -3,17 +3,18 @@
 #include <fstream>
 #include <chrono>
 
-int sortingArray[5000];
 int output[1];
+int j;
+int sortingArray[10000];
 
 void sort()
 {
     int h = 1;
     int tempArray[1];
-       
-    for (int i = 0; i < 5000; i++)
+
+    for (int i = 0; i < j; i++)
     {
-        for (int ii = 0; ii < 5000; ii++)
+        for (int ii = 0; ii < j; ii++)
         {
             if (sortingArray[i] < sortingArray[ii])
             {
@@ -29,18 +30,30 @@ void sort()
 
 int main()
 {
+    using std::chrono::high_resolution_clock;
+    using std::chrono::duration_cast;
+    using std::chrono::duration;
+    using std::chrono::milliseconds;
+
     std::ifstream file("Arrayfile.txt");
+
     if (file.is_open())
     {
-        for (int p = 0; p < 5000; ++p)
-        {
-            file >> sortingArray[p];
-        }
+        int x = 0;
         int showoutput;
-        using std::chrono::high_resolution_clock;
-        using std::chrono::duration_cast;
-        using std::chrono::duration;
-        using std::chrono::milliseconds;
+        while (true)                //Gets file size and returns to to x
+        {
+            file >> x;
+            j++;
+            if (file.eof()) break;
+        }
+
+        file.seekg(0);              //Retruns to top of file
+        for (x = 0; x < j; ++x)
+        {
+            file >> sortingArray[x];
+        }
+        file.close();
 
         auto t1 = high_resolution_clock::now();
         sort();
@@ -50,7 +63,7 @@ int main()
         auto ms_int = duration_cast<milliseconds>(t2 - t1);
         //Getting number of milliseconds as a double
         duration<double, std::milli> ms_double = t2 - t1;
-        
+
         std::cout << "Selection Sorting\n";
         std::cout << "\n";
         std::cout << "Array has been sorted in " << output[0] << " passes in " << ms_double.count() << "ms\n";
@@ -63,9 +76,9 @@ int main()
         if (showoutput == 1)
         {
             //Output sorted Array
-            for (int k = 0; k < 5000; k++)
+            for (int k = 0; k < j; k++)
             {
-            std::cout << sortingArray[k] << "\n";
+                std::cout << sortingArray[k] << "\n";
             }
         }
     }

@@ -45,7 +45,7 @@ namespace InsertionSort
 
             stopWatch.Stop();
             TimeSpan ts = stopWatch.Elapsed;
-            Console.WriteLine("Time taken to sort: " + ts.Milliseconds / 10 + "ms");
+            Console.WriteLine("Time taken to sort: " + ts.Milliseconds + "ms");
 
         }
 
