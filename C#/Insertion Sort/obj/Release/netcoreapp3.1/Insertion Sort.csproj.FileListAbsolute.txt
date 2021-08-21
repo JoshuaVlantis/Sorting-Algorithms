@@ -1,0 +1,13 @@
+C:\Users\Joshua\Documents\Github\Sorting-Algorithms\C#\Insertion Sort\bin\Release\netcoreapp3.1\Insertion Sort.exe
+C:\Users\Joshua\Documents\Github\Sorting-Algorithms\C#\Insertion Sort\bin\Release\netcoreapp3.1\Insertion Sort.deps.json
+C:\Users\Joshua\Documents\Github\Sorting-Algorithms\C#\Insertion Sort\bin\Release\netcoreapp3.1\Insertion Sort.runtimeconfig.json
+C:\Users\Joshua\Documents\Github\Sorting-Algorithms\C#\Insertion Sort\bin\Release\netcoreapp3.1\Insertion Sort.runtimeconfig.dev.json
+C:\Users\Joshua\Documents\Github\Sorting-Algorithms\C#\Insertion Sort\bin\Release\netcoreapp3.1\Insertion Sort.dll
+C:\Users\Joshua\Documents\Github\Sorting-Algorithms\C#\Insertion Sort\bin\Release\netcoreapp3.1\Insertion Sort.pdb
+C:\Users\Joshua\Documents\Github\Sorting-Algorithms\C#\Insertion Sort\obj\Release\netcoreapp3.1\Insertion Sort.csproj.AssemblyReference.cache
+C:\Users\Joshua\Documents\Github\Sorting-Algorithms\C#\Insertion Sort\obj\Release\netcoreapp3.1\Insertion Sort.AssemblyInfoInputs.cache
+C:\Users\Joshua\Documents\Github\Sorting-Algorithms\C#\Insertion Sort\obj\Release\netcoreapp3.1\Insertion Sort.AssemblyInfo.cs
+C:\Users\Joshua\Documents\Github\Sorting-Algorithms\C#\Insertion Sort\obj\Release\netcoreapp3.1\Insertion Sort.csproj.CoreCompileInputs.cache
+C:\Users\Joshua\Documents\Github\Sorting-Algorithms\C#\Insertion Sort\obj\Release\netcoreapp3.1\Insertion Sort.dll
+C:\Users\Joshua\Documents\Github\Sorting-Algorithms\C#\Insertion Sort\obj\Release\netcoreapp3.1\Insertion Sort.pdb
+C:\Users\Joshua\Documents\Github\Sorting-Algorithms\C#\Insertion Sort\obj\Release\netcoreapp3.1\Insertion Sort.genruntimeconfig.cache

@@ -1,0 +1,12 @@
+C:\Users\Joshua\Documents\Github\Sorting-Algorithms\C#\Selection Sorting\bin\Release\netcoreapp3.1\Selection Sorting.exe
+C:\Users\Joshua\Documents\Github\Sorting-Algorithms\C#\Selection Sorting\bin\Release\netcoreapp3.1\Selection Sorting.deps.json
+C:\Users\Joshua\Documents\Github\Sorting-Algorithms\C#\Selection Sorting\bin\Release\netcoreapp3.1\Selection Sorting.runtimeconfig.json
+C:\Users\Joshua\Documents\Github\Sorting-Algorithms\C#\Selection Sorting\bin\Release\netcoreapp3.1\Selection Sorting.runtimeconfig.dev.json
+C:\Users\Joshua\Documents\Github\Sorting-Algorithms\C#\Selection Sorting\bin\Release\netcoreapp3.1\Selection Sorting.dll
+C:\Users\Joshua\Documents\Github\Sorting-Algorithms\C#\Selection Sorting\bin\Release\netcoreapp3.1\Selection Sorting.pdb
+C:\Users\Joshua\Documents\Github\Sorting-Algorithms\C#\Selection Sorting\obj\Release\netcoreapp3.1\Selection Sorting.AssemblyInfoInputs.cache
+C:\Users\Joshua\Documents\Github\Sorting-Algorithms\C#\Selection Sorting\obj\Release\netcoreapp3.1\Selection Sorting.AssemblyInfo.cs
+C:\Users\Joshua\Documents\Github\Sorting-Algorithms\C#\Selection Sorting\obj\Release\netcoreapp3.1\Selection Sorting.csproj.CoreCompileInputs.cache
+C:\Users\Joshua\Documents\Github\Sorting-Algorithms\C#\Selection Sorting\obj\Release\netcoreapp3.1\Selection Sorting.dll
+C:\Users\Joshua\Documents\Github\Sorting-Algorithms\C#\Selection Sorting\obj\Release\netcoreapp3.1\Selection Sorting.pdb
+C:\Users\Joshua\Documents\Github\Sorting-Algorithms\C#\Selection Sorting\obj\Release\netcoreapp3.1\Selection Sorting.genruntimeconfig.cache

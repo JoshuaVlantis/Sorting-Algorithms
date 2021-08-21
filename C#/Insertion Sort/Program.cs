@@ -15,7 +15,13 @@ namespace InsertionSort
             int[] sortArray = new int[5000];
 
             populateArray(sortArray);
+
+            Stopwatch stopWatch = new Stopwatch();
+            stopWatch.Start();
             insertionSort(sortArray);
+            stopWatch.Stop();
+            TimeSpan ts = stopWatch.Elapsed;
+            Console.WriteLine("Time taken to sort: " + ts.Milliseconds + "ms");
 
             Console.ReadLine();
         }
@@ -23,10 +29,6 @@ namespace InsertionSort
         static void insertionSort(int[] sortArray)
         {
             int temp;
-
-            Stopwatch stopWatch = new Stopwatch();
-            stopWatch.Start();
-
             for (int i = 1; i < 5000; i++)
             {
                 while (sortArray[i] < sortArray[i - 1])
@@ -43,9 +45,6 @@ namespace InsertionSort
                 }
             }
 
-            stopWatch.Stop();
-            TimeSpan ts = stopWatch.Elapsed;
-            Console.WriteLine("Time taken to sort: " + ts.Milliseconds + "ms");
 
         }
 
