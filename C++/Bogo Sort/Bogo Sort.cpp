@@ -3,7 +3,7 @@
 #include <fstream>
 #include <chrono>
 
-int pass;
+long long unsigned int pass;
 
 bool checksorted(int sortingArray[], int n)
 {
@@ -22,6 +22,7 @@ bool checksorted(int sortingArray[], int n)
 
 void randomize(int sortingArray[], int n, int tempArray)
 {
+    srand((unsigned int)time(NULL));
     int r;
     pass++;
     for (int i = 0; i < n; i++)
