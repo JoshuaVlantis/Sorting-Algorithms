@@ -14,7 +14,7 @@ void sort(int sortingArray[], int n, int tempArray)
             sortingArray[i - 1] = tempArray;
             if (i != 1)
             {
-                i--;
+               i--;
             }
         }
     }
